@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<!--<link rel="shortcut icon" href="resources/img/favicon.ico">-->
+	<title>Proyect Dashboard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, target-densitydpi=device-dpi" />
+	<meta http-equiv="Cache-control" content="public">
+	<link rel="stylesheet" media="all" href="resources/css/main.min.css"/>
+	<!--jquery-->
+	<script src="resources/js/jquery.min.js"></script>
+	<script src="resources/js/initJS.min.js"></script>
+	<script src="resources/js/jquery.datetimepicker.full.js"></script>
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div id="preloader"></div>
+	<header>
+	<div class="header-user">
+		<h1 class="header-title">Title</h1>
+		<div class="user-session">
+			<ul>
+				<li><span>Rod Ahu</span></li>
+				<li>|</li>
+				<li><span>Administrador</span></li>
+				<li>|</li>
+				<li><a href="login.html">Salir</a></li>
+				<li>|</li>
+				<li><a href="javascript:;"><i class="fa fa-bell"></i></a></li>
+				<li>|</li>
+				<li><a href="javascript:;"><i class="fa fa-cog"></i></a></li>
+			</ul>
+		</div>
+		<!-- <div class="login-user">
+			<fieldset>
+				<div>
+					 <label>Usuario:</label>
+					<input type="text" placeholder="Usuario">
+				</div>
+				<div>
+					 <label>Clave:</label>
+					<input type="password" placeholder="Clave">
+				</div>
+				<div>
+					<button ui="button" color="white"><i class="fa fa-sign-in fa-lg"></i>&nbsp; Ingresar</button>
+				</div>
+
+			</fieldset>
+		</div> -->
+	</div>
+		<nav class="main-nav">
+			<ul>
+				<li><a href="./" class="selected"><i class="fa fa-home fa-lg"></i></a></li>
+				<li><a href="javascript:;">UI Elements</a>
+					<ul class="submenu">
+						<li><a href="login.html">Login</a></li>
+						<li><a href="javascript:;">Step</a></li>
+						<li><a href="javascript:;">Modal</a>
+							<ul class="submenu">
+								<li><a href="javascript:;">Modal-Formulario</a></li>
+								<li><a href="javascript:;">Modal-Tabla</a></li>
+								<li><a href="javascript:;">Modal-Mensajes</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="tablas.html"><i class="fa fa-table">&nbsp;</i>Tablas</a></li>
+				<li><a href="tabs.html"><i class="fa fa-bars">&nbsp;</i>Tabs</a></li>
+				<li><a href="bloques.html"><i class="fa fa-th-large">&nbsp;</i>Bloques</a></li>
+				<li><a href="formulario.html"><i class="fa fa-send">&nbsp;</i>Formularios</a></li>
+			</ul>
+		</nav>
+	</header>
+    <main class="wrap-content">
+		<div ui="breadcrumbs">
+			<ol>
+				<li><a href="./"><i class="fa fa-home fa-lg"></i></a></li>
+				<li>Tablas</li>
+			</ol>
+		</div>
+		<section>
+			<header class="header-section">
+				<h2>tablas</h2>
+				<div class="header-buttons">
+					<button ui="button" link="modal-tabla.html" title="Ejemplo de Grilla (Modal)" color="blue" modal><i class="fa fa-table fa-lg"></i>&nbsp;Tabla en Modal</button>
+				</div>
+			</header>
+			<div class="module">
+				<div class="module-header collapse">
+					<h3>Tabla (Básica)</h3>
+					<i class="fa  fa-compress fa-lg"></i>
+				</div>
+				<div class="module-content">
+					<div module="table">
+						<table>
+						    <thead>
+						        <tr>
+						            <th width="10"></th>
+						            <th>Link</th>
+									<th>Fecha Inicio</th>
+									<th>Fecha Fin</th>
+									<th>Texto</th>
+						        </tr>
+						    </thead>
+						    <tbody>
+						        <tr>
+									<td><input type="checkbox"></td>
+						            <td><a href="javascript:;">Lorem Ipsum</a></td>
+									<td><i class="fa fa-calendar">&nbsp;</i>20/07/2015</td>
+									<td><i class="fa fa-calendar">&nbsp;</i>20/07/2015</td>
+									<td>Lorem Ipsum</td>
+						        </tr>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td><a href="javascript:;">Lorem Ipsum</a></td>
+									<td><i class="fa fa-calendar">&nbsp;</i>20/07/2015</td>
+									<td><i class="fa fa-calendar">&nbsp;</i>20/07/2015</td>
+									<td>Lorem Ipsum</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+						            <td><a href="javascript:;">Lorem Ipsum</a></td>
+									<td><i class="fa fa-calendar">&nbsp;</i>20/07/2015</td>
+									<td><i class="fa fa-calendar">&nbsp;</i>20/07/2015</td>
+									<td>Lorem Ipsum</td>
+						        </tr>
+								<tr>
+									<td><input type="checkbox"></td>
+						            <td><a href="javascript:;">Lorem Ipsum</a></td>
+									<td><i class="fa fa-calendar">&nbsp;</i>20/07/2015</td>
+									<td><i class="fa fa-calendar">&nbsp;</i>20/07/2015</td>
+									<td>Lorem Ipsum</td>
+						        </tr>
+						    </tbody>
+						</table>
+
+					</div>
+				</div>
+			</div>
+			<div class="module">
+				<div class="module-header collapse" collapsed>
+					<h3>Tabla (disabled y form elements)</h3>
+					<i class="fa  fa-compress fa-lg"></i>
+				</div>
+				<div class="module-content">
+					<div module="table">
+						<table>
+						    <thead>
+						        <tr>
+						            <th width="10"></th>
+						            <th>Link</th>
+									<th>Fecha Inicio</th>
+									<th>Fecha Fin</th>
+									<th width="140">%</th>
+									<th>Valor</th>
+									<th>Input</th>
+									<th>Select</th>
+						            <th>button</th>
+						            <th width="20"></th>
+						            <th width="20"></th>
+						        </tr>
+						    </thead>
+						    <tbody>
+						        <tr>
+									<td><input type="checkbox"></td>
+						            <td><a href="javascript:;">Lorem Ipsum</a></td>
+									<td><i class="fa fa-calendar">&nbsp;</i>20/07/2015</td>
+									<td><i class="fa fa-calendar">&nbsp;</i>20/07/2015</td>
+									<td>
+										<span ui="progress-bar">
+								            <span style="width:100%">100%</span>
+								        </span>
+									</td>
+									<td>$245.000</td>
+									<td><input type="text" ui="input-text" placeholder="Placeholder" value=""></td>
+									<td><select ui="select"><option>Seleccione</option></select></td>
+									<td><button ui="button">Boton</button></td>
+						            <td>
+										<a href="javascript:;"><i class="fa fa-pencil"></i></a>
+						            </td>
+						            <td>
+						                <a href="javascript:;"><i class="fa fa-remove"></i></a>
+						            </td>
+						        </tr>
+								<tr tr-disabled>
+									<td><input type="checkbox"></td>
+						            <td><a href="javascript:;">Lorem Ipsum</a></td>
+									<td><i class="fa fa-calendar">&nbsp;</i>20/07/2015</td>
+									<td><i class="fa fa-calendar">&nbsp;</i>20/07/2015</td>
+									<td>
+										<span ui="progress-bar">
+											<span style="width:80%">80%</span>
+										</span>
+									</td>
+									<td>$245.000</td>
+									<td><input type="text" ui="input-text" placeholder="Placeholder" value=""></td>
+									<td><select ui="select"><option>Seleccione</option></select></td>
+									<td><button ui="button">Boton</button></td>
+						            <td>
+										<a href="javascript:;"><i class="fa fa-pencil"></i></a>
+						            </td>
+						            <td>
+						                <a href="javascript:;"><i class="fa fa-remove"></i></a>
+						            </td>
+								</tr>
+								<tr tr-disabled>
+									<td><input type="checkbox"></td>
+						            <td><a href="javascript:;">Lorem Ipsum</a></td>
+									<td><i class="fa fa-calendar">&nbsp;</i>20/07/2015</td>
+									<td><i class="fa fa-calendar">&nbsp;</i>20/07/2015</td>
+									<td>
+										<span ui="progress-bar">
+											<span style="width:60%">60%</span>
+										</span>
+									</td>
+									<td>$245.000</td>
+									<td><input type="text" ui="input-text" placeholder="Placeholder" value=""></td>
+									<td><select ui="select"><option>Seleccione</option></select></td>
+									<td><button ui="button">Boton</button></td>
+						            <td>
+										<a href="javascript:;"><i class="fa fa-pencil"></i></a>
+						            </td>
+						            <td>
+						                <a href="javascript:;"><i class="fa fa-remove"></i></a>
+						            </td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+						            <td><a href="javascript:;">Lorem Ipsum</a></td>
+									<td><i class="fa fa-calendar">&nbsp;</i>20/07/2015</td>
+									<td><i class="fa fa-calendar">&nbsp;</i>20/07/2015</td>
+									<td>
+										<span ui="progress-bar">
+											<span style="width:40%">40%</span>
+										</span>
+									</td>
+									<td>$245.000</td>
+									<td><input type="text" ui="input-text" placeholder="Placeholder" value=""></td>
+									<td><select ui="select"><option>Seleccione</option></select></td>
+									<td><button ui="button">Boton</button></td>
+						            <td>
+										<a href="javascript:;"><i class="fa fa-pencil"></i></a>
+						            </td>
+						            <td>
+						                <a href="javascript:;"><i class="fa fa-remove"></i></a>
+						            </td>
+								</tr>
+								<tr collapsed-tabled>
+
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+						            <td><a href="javascript:;">Lorem Ipsum</a></td>
+									<td><i class="fa fa-calendar">&nbsp;</i>20/07/2015</td>
+									<td><i class="fa fa-calendar">&nbsp;</i>20/07/2015</td>
+									<td>
+										<span ui="progress-bar">
+											<span style="width:20%">20%</span>
+										</span>
+									</td>
+									<td>$245.000</td>
+									<td><input type="text" ui="input-text" placeholder="Placeholder" value=""></td>
+									<td><select ui="select"><option>Seleccione</option></select></td>
+									<td><button ui="button">Boton</button></td>
+						            <td>
+										<a href="javascript:;"><i class="fa fa-pencil"></i></a>
+						            </td>
+						            <td>
+						                <a href="javascript:;"><i class="fa fa-remove"></i></a>
+						            </td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+						            <td><a href="javascript:;">Lorem Ipsum</a></td>
+									<td><i class="fa fa-calendar">&nbsp;</i>20/07/2015</td>
+									<td><i class="fa fa-calendar">&nbsp;</i>20/07/2015</td>
+									<td>
+										<span ui="progress-bar">
+											<span style="width:0%">0%</span>
+										</span>
+									</td>
+									<td>$245.000</td>
+									<td><input type="text" ui="input-text" placeholder="Placeholder" value=""></td>
+									<td><select ui="select"><option>Seleccione</option></select></td>
+									<td><button ui="button">Boton</button></td>
+						            <td>
+										<a href="javascript:;"><i class="fa fa-pencil"></i></a>
+						            </td>
+						            <td>
+						                <a href="javascript:;" delete><i class="fa fa-remove"></i></a>
+						            </td>
+								</tr>
+						    </tbody>
+						</table>
+						<div class="table-footer">
+							<div class="player">
+								<ul>
+									<li>
+										<select>
+											<option value="10">10</option>
+										</select>
+									</li>
+									<li>
+										<span>Página</span>
+										<input type="number" value="1">
+										<span>de 10</span>
+									</li>
+								</ul>
+							</div>
+							<div class="links-table">
+								<ul>
+									<li><a href="javascript:;"><i class="fa fa-ban">&nbsp;</i>Cancelar Cambios</a></li>
+									<li><a href="javascript:;"><i class="fa fa-floppy-o">&nbsp;</i>Guardar Cambios</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div module="footer-buttons">
+						<ul>
+							<li><button ui="button" color="grey" ><i class="fa fa-chevron-left"></i>&nbsp; Volver</button></li>
+							<li><button ui="button" color="cancel"><i class="fa fa-ban"></i>&nbsp; Cancelar</button></li>
+							<li><button ui="button" color="red" ><i class="fa fa-file-pdf-o"></i>&nbsp; Exportar (PDF)</button></li>
+							<li><button ui="button" color="blue" ><i class="fa fa-print"></i>&nbsp; Imprimir</button></li>
+							<li><button ui="button" ><i class="fa fa-download"></i>&nbsp; Crear Nuevo</button></li>
+							<li><button ui="button" ><i class="fa fa-check"></i>&nbsp; Importar</button></li>
+							<li><button ui="button" ><i class="fa fa-floppy-o"></i>&nbsp; Guardar</button></li>
+							<li><button ui="button" color="blue" ><i class="fa fa-chevron-right"></i>&nbsp; Siguiente</button></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+    </main>
+	<footer>
+		<span>Dashboard | 2016</span>
+	</footer>
+</body>
+</html>

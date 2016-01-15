@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<!--<link rel="shortcut icon" href="resources/img/favicon.ico">-->
+	<title>Proyect Dashboard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, target-densitydpi=device-dpi" />
+	<meta http-equiv="Cache-control" content="public">
+	<link rel="stylesheet" media="all" href="resources/css/main.min.css"/>
+	<!--jquery-->
+	<script src="resources/js/jquery.min.js"></script>
+	<script src="resources/js/initJS.min.js"></script>
+	<script src="resources/js/jquery.datetimepicker.full.js"></script>
+	<script src="resources/js/pace.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header>
+	<div class="header-user">
+		<h1 class="header-title">Title</h1>
+		<div class="user-session">
+			<ul>
+				<li><span>Rod Ahu</span></li>
+				<li><span>Administrador</span></li>
+				<li>|</li>
+				<li><a href="login.html"><i class="fa fa-sign-out"></i></a></li>
+				<li><a href="javascript:;"><i class="fa fa-bell"></i></a></li>
+				<li><a href="javascript:;"><i class="fa fa-cog"></i></a></li>
+			</ul>
+		</div>
+		<!-- <div class="login-user">
+			<fieldset>
+				<div>
+					 <label>Usuario:</label>
+					<input type="text" placeholder="Usuario">
+				</div>
+				<div>
+					 <label>Clave:</label>
+					<input type="password" placeholder="Clave">
+				</div>
+				<div>
+					<button ui="button" color="white"><i class="fa fa-sign-in fa-lg"></i>&nbsp; Ingresar</button>
+				</div>
+
+			</fieldset>
+		</div> -->
+	</div>
+		<nav class="main-nav">
+			<ul>
+				<li><a href="./" class="selected"><i class="fa fa-home fa-lg"></i></a></li>
+				<li><a href="javascript:;">UI Elements</a>
+					<ul class="submenu">
+						<li><a href="login.html">Login</a></li>
+						<li><a href="javascript:;">Step</a></li>
+						<li><a href="javascript:;">Modal</a>
+							<ul class="submenu">
+								<li><a href="javascript:;">Modal-Formulario</a></li>
+								<li><a href="javascript:;">Modal-Tabla</a></li>
+								<li><a href="javascript:;">Modal-Mensajes</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="tablas.html"><i class="fa fa-table">&nbsp;</i>Tablas</a></li>
+				<li><a href="tabs.html"><i class="fa fa-bars">&nbsp;</i>Tabs</a></li>
+				<li><a href="bloques.html"><i class="fa fa-th-large">&nbsp;</i>Bloques</a></li>
+				<li><a href="formulario.html"><i class="fa fa-send">&nbsp;</i>Formularios</a></li>
+			</ul>
+		</nav>
+	</header>
+    <main class="wrap-content">
+		<div ui="breadcrumbs">
+			<ol>
+				<li><a href="./"><i class="fa fa-home fa-lg"></i></a></li>
+				<li><a href="bloques.html">Bloques</a></li>
+				<li><a href="tablas.html">Tablas</a></li>
+				<li><a href="tabs.html">Tabs</a></li>
+				<li>Layout Ejemplo</li>
+				<!-- <li></li> -->
+			</ol>
+		</div>
+		<section>
+			<header class="header-section">
+				<h2>Nombre página</h2>
+				<div class="header-buttons">
+					<button ui="button" link="" title="" color="green" modal><i class="fa fa-external-link fa-lg">&nbsp;</i>Green Button</button>
+					<button ui="button" link="" title="" color="blue" modal>Blue Button</button>
+					<button ui="button" link="" title="" color="red" modal>Red Button</button>
+				</div>
+				<div class="header-links">
+					<a href="javascript:;">Link a</a>
+					<a href="javascript:;">Link b</a>
+					<a href="javascript:;">Link c</a>
+				</div>
+			</header>
+			<div class="module">
+				<div class="module-header collapse">
+					<h3>Titulo</h3>
+					<i class="fa  fa-compress fa-lg"></i>
+				</div>
+				<div class="module-content">
+					<div module="block">
+						<div block="100">
+							<div class="block-header">
+								<h4>Titulo contenido</h4>
+							</div>
+							<div class="block-content">
+								<img src="http://placekitten.com/g/600/300">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a href="javascript:;">Leer más</a></p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+    </main>
+	<footer>
+		<span>Dashboard | 2016</span>
+	</footer>
+</body>
+</html>

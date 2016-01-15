@@ -1,0 +1,15 @@
+.login {
+    width: 300px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -150px;
+    z-index: -1;
+}
+.login fieldset div {
+	margin-top: 10px;
+}

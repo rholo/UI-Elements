@@ -1,0 +1,39 @@
+/**
+ * @title colours
+ * @description: CSS for main colours
+**/
+
+/*Layout*/
+$bodyBackground:#f1f2f2;
+$mainBackground:#fff;
+$headerBackground:#3299BB;
+$moduleHeaderBckg:#F3F3F3;
+$moduleHeaderBckg-hover:darken($moduleHeaderBckg, 2.5%);
+
+/*nav*/
+$navBackground: #5D5D5D;
+$navLi:#5D5D5D;
+$navli-hover:darken($navLi, 2.5%);
+$navLinks:#fff;
+
+/*type*/
+$textColor: #444;
+$titleColor: #3299BB;
+$linkColor: #3299BB;
+$linkColor-hover: darken($linkColor, 2.5%);
+$buttonColor: #fff;
+$buttonDefaultColor:#7f7f82;
+
+/*Buttons*/
+$defaultColor: #f9f9f9;
+$defaultColor_hover: darken($defaultColor, 2.5%);
+$grey:#909090;
+$darkGrey:darken($grey, 2.5%);
+$white:#fff;
+$darkWhite:darken($white, 2.5%);
+$green: #00A79D;
+$darkGreen: darken($green, 2.5%);
+$blue: #20608E;
+$darkBlue: darken($blue, 2.5%);
+$red: #A7002E;
+$darkRed: darken($red, 2.5%);

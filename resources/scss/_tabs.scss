@@ -1,0 +1,89 @@
+/**
+ * @title Module-tabs
+ * @example <div module="tabs" tabs="horizontal || vertical">
+**/
+
+[module="tabs"] {
+  margin: 10px 0;
+  ul {
+    overflow: hidden;
+  }
+}
+
+[tab="vertical"] ul {
+  width: 200px;
+  float: left;
+}
+
+[tab="horizontal"] ul li {
+  display: inline;
+}
+
+[tab="vertical"] ul li {
+  display: block;
+}
+
+[tab="horizontal"] ul li a {
+  float: left;
+  display: block;
+  position: relative;
+  color: #444;
+  background-color: #f1f1f1;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-bottom: 2px solid #ccc;
+  &:hover {
+    background-color: #E8E8E8;
+  }
+}
+
+[tab="vertical"] ul li a {
+  float: none;
+  display: block;
+  position: relative;
+  color: #444;
+  background-color: #f1f1f1;
+  text-decoration: none;
+  padding: 4px 10px;
+}
+
+.link-tab {
+  background-color: #FFF !important;
+  border-color: #3299BB !important;
+  color:$linkColor!important;
+}
+
+[tab="vertical"] ul li + li a {
+  border-left: 1px solid #dedede;
+}
+
+[tabs-wrap] {
+  position: relative;
+  min-height: 200px;
+  overflow: hidden;
+  border-top: 1px solid #ccc;
+}
+
+[tab="vertical"] > [tabs-wrap] {
+  position: relative;
+  min-height: 200px;
+  margin-left: 210px;
+}
+
+[tabs-wrap] {
+  [tab] {
+    padding: 10px 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    display: none;
+  }
+  .hide-tab {
+    display: none;
+  }
+  .tab-selected {
+    display: block;
+  }
+}

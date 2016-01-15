@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<!--<link rel="shortcut icon" href="resources/img/favicon.ico">-->
+	<title>Proyect Dashboard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, target-densitydpi=device-dpi" />
+	<meta http-equiv="Cache-control" content="public">
+	<link rel="stylesheet" media="all" href="resources/css/main.min.css"/>
+	<!--jquery-->
+	<script src="resources/js/jquery.min.js"></script>
+	<script src="resources/js/initJS.min.js"></script>
+	<script src="resources/js/jquery.datetimepicker.full.js"></script>
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div id="preloader"></div>
+	<header>
+	<div class="header-user">
+		<h1 class="header-title">Title</h1>
+		<div class="user-session">
+			<ul>
+				<li><span>Rod Ahu</span></li>
+				<li>|</li>
+				<li><span>Administrador</span></li>
+				<li>|</li>
+				<li><a href="login.html">Salir</a></li>
+				<li>|</li>
+				<li><a href="javascript:;"><i class="fa fa-bell"></i></a></li>
+				<li>|</li>
+				<li><a href="javascript:;"><i class="fa fa-cog"></i></a></li>
+			</ul>
+		</div>
+		<!-- <div class="login-user">
+			<fieldset>
+				<div>
+					 <label>Usuario:</label>
+					<input type="text" placeholder="Usuario">
+				</div>
+				<div>
+					 <label>Clave:</label>
+					<input type="password" placeholder="Clave">
+				</div>
+				<div>
+					<button ui="button" color="white"><i class="fa fa-sign-in fa-lg"></i>&nbsp; Ingresar</button>
+				</div>
+
+			</fieldset>
+		</div> -->
+	</div>
+		<nav class="main-nav">
+			<ul>
+				<li><a href="./"><i class="fa fa-home fa-lg"></i></a></li>
+				<li><a href="javascript:;">UI Elements</a>
+					<ul class="submenu">
+						<li><a href="login.html">Login</a></li>
+						<li><a href="javascript:;">Step</a></li>
+						<li><a href="javascript:;">Modal</a>
+							<ul class="submenu">
+								<li><a href="javascript:;">Modal-Formulario</a></li>
+								<li><a href="javascript:;">Modal-Tabla</a></li>
+								<li><a href="javascript:;">Modal-Mensajes</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="tablas.html"><i class="fa fa-table">&nbsp;</i>Tablas</a></li>
+				<li><a href="tabs.html"><i class="fa fa-bars">&nbsp;</i>Tabs</a></li>
+				<li><a href="bloques.html"><i class="fa fa-th-large">&nbsp;</i>Bloques</a></li>
+				<li><a href="formulario.html"><i class="fa fa-send">&nbsp;</i>Formularios</a></li>
+			</ul>
+		</nav>
+	</header>
+    <main class="wrap-content">
+		<div ui="breadcrumbs">
+			<ol>
+				<li><a href="./"><i class="fa fa-home fa-lg"></i></a></li>
+				<li>Bloques</li>
+			</ol>
+		</div>
+		<section>
+			<header class="header-section">
+				<h2>Bloques</h2>
+				<div class="header-buttons">
+					<button ui="button" link="modal-bloques.html" title="Bloques en Modal" color="blue" modal><i class="fa fa-table fa-lg">&nbsp;</i>Bloques Modal</button>
+				</div>
+			</header>
+			<div class="module">
+				<div class="module-header collapse">
+					<h3>Titulo 4 Bloques</h3>
+					<i class="fa  fa-compress fa-lg"></i>
+				</div>
+				<div class="module-content">
+					<div module="block">
+						<div block="25">
+							<div class="block-header">
+								<h4>Bloque 1</h4>
+							</div>
+							<div class="block-content">
+								<a href="javascript:;"><img src="http://placekitten.com/g/600/300"></a>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+						<div block="25">
+							<div class="block-header">
+								<h4>Bloque 2</h4>
+							</div>
+							<div class="block-content">
+								<img src="http://placekitten.com/g/600/300">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+						<div block="25">
+							<div class="block-header">
+								<h4>Bloque 3</h4>
+							</div>
+							<div class="block-content">
+								<img src="http://placekitten.com/g/600/300">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+						<div block="25">
+							<div class="block-header">
+								<h4>Bloque 4</h4>
+							</div>
+							<div class="block-content">
+								<img src="http://placekitten.com/g/600/300">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="module">
+				<div class="module-header collapse" collapsed>
+					<h3>Titulo Tres Bloques</h3>
+					<i class="fa  fa-compress fa-lg"></i>
+				</div>
+				<div class="module-content">
+					<div module="block">
+						<div block="30">
+							<div class="block-header">
+								<h4>Titulo Bloque</h4>
+							</div>
+							<div class="block-content">
+								<div message="red"><span><i class="fa fa-exclamation-triangle"></i>&nbsp; Error en Sistema</span></div>
+								<div message="yellow"><span><i class="fa fa-info"></i>&nbsp; Hay un error de concordancia de datos</span></div>
+								<div message="green"><span><i class="fa fa-check"></i>&nbsp; Guardado Correctamente</span></div>
+							</div>
+						</div>
+						<div block="30">
+							<div class="block-header">
+								<h4>Titulo Bloque</h4>
+							</div>
+							<div class="block-content">
+								<div class="input-wrap">
+									<input type="text" ui="input-text" required="" placeholder="Nombre">
+								</div>
+								<div class="input-wrap">
+									<input type="text" ui="input-text" required="" placeholder="Apellido">
+								</div>
+								<div class="input-wrap">
+									<input type="text" ui="input-text" class="calendar" placeholder="Fecha" readonly>
+								</div>
+								<div class="input-wrap">
+									<select ui="select" required="">
+										<option>Seleccionar</option>
+									</select>
+								</div>
+								<div class="input-wrap">
+									<textarea placeholder="Ingresar Texto" ui="textarea"></textarea>
+								</div>
+								<div class="input-wrap">
+									<input type="file" value="" placeholder="Seleccionar Archivo" ui="input-text">
+								</div>
+							</div>
+						</div>
+						<div block="30">
+							<div class="block-header">
+								<h4>Titulo Bloque</h4>
+							</div>
+							<div class="block-content">
+								<img src="http://placekitten.com/g/600/300">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div module="footer-buttons">
+						<ul>
+							<li><button ui="button" color="grey" ><i class="fa fa-chevron-left"></i>&nbsp; Volver</button></li>
+							<li><button ui="button" color="cancel"><i class="fa fa-ban"></i>&nbsp; Cancelar</button></li>
+							<li><button ui="button" color="red" ><i class="fa fa-file-pdf-o"></i>&nbsp; Exportar (PDF)</button></li>
+							<li><button ui="button" color="blue" ><i class="fa fa-print"></i>&nbsp; Imprimir</button></li>
+							<li><button ui="button" ><i class="fa fa-download"></i>&nbsp; Crear Nuevo</button></li>
+							<li><button ui="button" ><i class="fa fa-check"></i>&nbsp; Importar</button></li>
+							<li><button ui="button" ><i class="fa fa-floppy-o"></i>&nbsp; Guardar</button></li>
+							<li><button ui="button" color="blue" ><i class="fa fa-chevron-right"></i>&nbsp; Siguiente</button></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="module">
+				<div class="module-header collapse" collapsed>
+					<h3>Titulo Dos Bloques</h3>
+					<i class="fa  fa-compress fa-lg"></i>
+				</div>
+				<div class="module-content">
+					<div module="block">
+						<div block="50">
+							<div class="block-header">
+								<h4>Titulo Bloque</h4>
+							</div>
+							<div class="block-content">
+								<img src="http://placekitten.com/g/600/300">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+
+						<div block="50">
+							<div class="block-header">
+								<h4>Titulo Bloque</h4>
+							</div>
+							<div class="block-content">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<img src="http://placekitten.com/g/600/300">
+							</div>
+						</div>
+					</div>
+					<div module="footer-buttons">
+						<ul>
+							<li><button ui="button" color="grey" ><i class="fa fa-chevron-left"></i>&nbsp; Volver</button></li>
+							<li><button ui="button" color="cancel"><i class="fa fa-ban"></i>&nbsp; Cancelar</button></li>
+							<li><button ui="button" color="red" ><i class="fa fa-file-pdf-o"></i>&nbsp; Exportar (PDF)</button></li>
+							<li><button ui="button" color="blue" ><i class="fa fa-print"></i>&nbsp; Imprimir</button></li>
+							<li><button ui="button" ><i class="fa fa-download"></i>&nbsp; Crear Nuevo</button></li>
+							<li><button ui="button" ><i class="fa fa-check"></i>&nbsp; Importar</button></li>
+							<li><button ui="button" ><i class="fa fa-floppy-o"></i>&nbsp; Guardar</button></li>
+							<li><button ui="button" color="blue" ><i class="fa fa-chevron-right"></i>&nbsp; Siguiente</button></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+			<div class="module">
+				<div class="module-header collapse" collapsed>
+					<h3>Titulo Un Bloque más 1 Bloque /2</h3>
+					<i class="fa  fa-compress fa-lg"></i>
+				</div>
+				<div class="module-content">
+					<div module="block">
+						<div block="30">
+							<div class="block-header">
+								<h4>Titulo Bloque</h4>
+							</div>
+							<div class="block-content">
+								<div class="input-wrap">
+									<input type="text" ui="input-text" required="" placeholder="Nombre">
+								</div>
+								<div class="input-wrap">
+									<input type="text" ui="input-text" required="" placeholder="Apellido">
+								</div>
+								<div class="input-wrap">
+									<input type="text" ui="input-text" class="calendar" placeholder="Fecha" readonly>
+								</div>
+								<div class="input-wrap">
+									<select ui="select" required="">
+										<option>Seleccionar</option>
+									</select>
+								</div>
+								<div class="input-wrap">
+									<textarea placeholder="Ingresar Texto" ui="textarea"></textarea>
+								</div>
+								<div class="input-wrap">
+									<input type="file" value="" placeholder="Seleccionar Archivo" ui="input-text">
+								</div>
+							</div>
+						</div>
+
+						<div block="70">
+							<div class="block-header">
+								<h4>Titulo Bloque</h4>
+							</div>
+							<div class="block-content">
+								<img src="http://placekitten.com/g/600/300">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div module="footer-buttons">
+						<ul>
+							<li><button ui="button" color="grey" ><i class="fa fa-chevron-left"></i>&nbsp; Volver</button></li>
+							<li><button ui="button" color="cancel"><i class="fa fa-ban"></i>&nbsp; Cancelar</button></li>
+							<li><button ui="button" color="red" ><i class="fa fa-file-pdf-o"></i>&nbsp; Exportar (PDF)</button></li>
+							<li><button ui="button" color="blue" ><i class="fa fa-print"></i>&nbsp; Imprimir</button></li>
+							<li><button ui="button" ><i class="fa fa-download"></i>&nbsp; Crear Nuevo</button></li>
+							<li><button ui="button" ><i class="fa fa-check"></i>&nbsp; Importar</button></li>
+							<li><button ui="button" ><i class="fa fa-floppy-o"></i>&nbsp; Guardar</button></li>
+							<li><button ui="button" color="blue" ><i class="fa fa-chevron-right"></i>&nbsp; Siguiente</button></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+			<div class="module">
+				<div class="module-header collapse" collapsed>
+					<h3>Titulo Un Bloque</h3>
+					<i class="fa  fa-compress fa-lg"></i>
+				</div>
+				<div class="module-content">
+					<div module="block">
+						<div block="100">
+							<div class="block-header">
+								<h4>Titulo Bloque</h4>
+							</div>
+							<div class="block-content">
+								<img src="http://placekitten.com/g/600/300">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div module="footer-buttons">
+						<ul>
+							<li><button ui="button" color="grey" ><i class="fa fa-chevron-left"></i>&nbsp; Volver</button></li>
+							<li><button ui="button" color="cancel"><i class="fa fa-ban"></i>&nbsp; Cancelar</button></li>
+							<li><button ui="button" color="red" ><i class="fa fa-file-pdf-o"></i>&nbsp; Exportar (PDF)</button></li>
+							<li><button ui="button" color="blue" ><i class="fa fa-print"></i>&nbsp; Imprimir</button></li>
+							<li><button ui="button" ><i class="fa fa-download"></i>&nbsp; Crear Nuevo</button></li>
+							<li><button ui="button" ><i class="fa fa-check"></i>&nbsp; Importar</button></li>
+							<li><button ui="button" ><i class="fa fa-floppy-o"></i>&nbsp; Guardar</button></li>
+							<li><button ui="button" color="blue" ><i class="fa fa-chevron-right"></i>&nbsp; Siguiente</button></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+    </main>
+	<footer>
+		<span>Dashboard | 2016</span>
+	</footer>
+</body>
+</html>

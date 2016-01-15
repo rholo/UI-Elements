@@ -1,0 +1,67 @@
+/**
+ * @title Buttons
+ * @example <button ui="button" color="cancel || red || blue || green || grey"></button>
+**/
+
+[ui="button"] {
+  background-color: $defaultColor;
+  color: $buttonDefaultColor;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 7px 12px;
+  border: 1px solid #7f7f82;
+  outline: none;
+  vertical-align: middle;
+  &:hover {
+    background-color: $defaultColor_hover;
+  }
+}
+
+[color]{
+    border:0!important;
+    color:#fff;
+}
+[color="cancel"] {
+  background-color: transparent;
+  color: $buttonDefaultColor;
+  &:hover {
+    color: darken($buttonDefaultColor, 4.5%);
+    background-color: transparent;
+  }
+}
+
+[color="green"] {
+  background-color: $green;
+  &:hover {
+    background-color: $darkGreen;
+  }
+}
+
+[color="blue"] {
+  background-color:$blue;
+  &:hover {
+    background-color:$darkBlue;
+  }
+}
+
+[color="red"] {
+  background-color: $red;
+  &:hover {
+    background-color: $darkRed;
+  }
+}
+
+[color="grey"] {
+  background-color: $grey;
+  &:hover {
+    background-color: $darkGrey;
+  }
+}
+
+[color="white"] {
+  background-color: $white;
+  color: #888;
+  &:hover {
+    background-color: $darkWhite;
+  }
+}

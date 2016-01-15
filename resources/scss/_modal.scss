@@ -1,0 +1,50 @@
+/**
+ * @title modal
+ * @description
+ * @example <a href="" url="modal-tmpl.html" title="modal title" size="%">
+**/
+
+[ui="modal"] {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#66000000',GradientType=0 );
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+[ui="modal-box-header"] {
+  border-bottom: 1px solid #ccc;
+  height: 34px;
+  line-height: 24px;
+}
+
+[ui="modal-box"] {
+  min-width: 280px;
+  /*min-height: 280px;*/
+  max-width: 960px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin: 0 auto;
+  padding: 10px;
+  top: 10%;
+  position: absolute;
+  z-index: 9997;
+  left: 14%;
+  right: 14%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+[ui="close-modal"] {
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}

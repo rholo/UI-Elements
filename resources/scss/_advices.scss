@@ -1,0 +1,42 @@
+/**
+ * @title Interaction alerts
+ * @example <div message="red"><span><i class="fa fa-exclamation-triangle"></i>&nbsp; Error en Sistema</span></div>
+**/
+
+[message] {
+  padding: 4px 10px;
+  font-style: italic;
+  font-weight: bold;
+  margin: 5px 0;
+  > .icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+}
+
+[message="red"] {
+  background-color: #FFB0B0;
+  > span {
+    color: #C46262;
+  }
+}
+
+[message="yellow"] {
+  background-color: #FFF9CA;
+  > span {
+    color: #999250;
+  }
+}
+
+[message="green"] {
+  background-color: #D4F9D4;
+  > span {
+    color: #72A386;
+  }
+}

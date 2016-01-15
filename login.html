@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<!--<link rel="shortcut icon" href="resources/img/favicon.ico">-->
+<title>Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, target-densitydpi=device-dpi" />
+<meta http-equiv="Cache-control" content="no-cache">
+<link rel="stylesheet" media="all" href="resources/css/main.min.css"/>
+<link rel="stylesheet" media="all" href="resources/css/login.css"/>
+
+<!--jquery-->
+<script src="resources/js/jquery.js"></script>
+<script src="resources/js/initJS.js"></script>
+<script src="resources/js/pace.min.js"></script>
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--CSS-->
+</head>
+<body>
+	<header>
+		<div class="header-user">
+			<h1 class="header-title">Proyect Dashboard</h1>
+				<div class="user-session">
+					<ul>
+						<li><a href="javascript:;">Soporte</a></li>
+						<li>|</li>
+						<li><a href="javascript:;">Olvide mi contraseña</a></li>
+					</ul>
+				</div>
+		</div>
+	</header>
+	<main>
+		<div class="login">
+				<fieldset>
+					<div>
+						<!-- <label>Usuario:</label> -->
+						<input type="text" ui="input-text" placeholder="Usuario">
+					</div>
+					<div>
+						<!-- <label>Clave:</label> -->
+						<input type="password" ui="input-text" placeholder="Contraseña">
+					</div>
+					<div>
+						<button ui="button" color="grey" ><i class="fa fa-chevron-left"></i>&nbsp; Salir</button>
+						<button ui="button" color="blue" onclick="location.href='./'"><i class="fa fa-sign-in"></i>&nbsp; Ingresar</button>
+					</div>
+				</fieldset>
+		</div>
+	</main>
+	<footer></footer>
+</body>
+</html>

@@ -35,7 +35,9 @@ init = {
 				});
 				init.modalBox(link,title,size);
 			});
-
+			$j(document).on('hover', function () {
+				$j(this).addClass('disabled');
+			});
 			//collapse option
 		},
 		tableSettings:function () {
@@ -58,9 +60,12 @@ init = {
 	   		});
 		},
 		nav:function () {
+			$j('.main-nav ul').find('[disabled]').children('a').addClass('disabled');
 			$j('.main-nav ul li').hover(function(){
-				$j(this).addClass('hover');
-				$j('ul:first', this).fadeIn(100);
+				if (!$j(this).attr('disabled')) {
+					$j(this).addClass('hover');
+					$j('ul:first', this).fadeIn(100);
+				}
 			}, function(){
 				$j(this).removeClass('hover');
 				$j('ul:first', this).fadeOut(100);
@@ -73,8 +78,8 @@ init = {
 				$j(this).addClass('link-tab');
 				$j(this).parent().siblings().children().removeClass('link-tab');
 				var tab = $j(this).attr('tab');
-				$j('[tabs-wrap] [tab]').not('#'+tab).css('display','none');
 				$j('#'+tab).fadeIn();
+				$j('#'+tab).siblings('[tab]').css('display','none');
 			});
 		},
 		modalBox:function (link,title,size) {

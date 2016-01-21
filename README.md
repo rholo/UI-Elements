@@ -8,7 +8,12 @@ Collapse
 Accordion
 Grid
 
-icons from [Font Awesome](https://fortawesome.github.io/Font-Awesome/)
+UI Components:
+
+...
+
+image example [placekitten](http://placekitten.com)
+
+icons [Font Awesome](https://fortawesome.github.io/Font-Awesome/)
 
 Calendar [datetimepicker](https://github.com/xdan/datetimepicker)
-

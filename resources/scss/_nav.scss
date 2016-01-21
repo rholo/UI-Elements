@@ -25,7 +25,10 @@
     }
   }
 }
-
+.main-nav li[disabled]{
+    opacity: .4;
+    cursor: not-allowed;
+}
 .selected {
   background-color: #666;
   text-decoration: none;

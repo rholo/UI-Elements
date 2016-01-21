@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8"/>
 	<!--<link rel="shortcut icon" href="resources/img/favicon.ico">-->
-	<title>Proyect Dashboard</title>
+	<title>UI Elements Proyect</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, target-densitydpi=device-dpi" />
 	<meta http-equiv="Cache-control" content="public">
 	<link rel="stylesheet" media="all" href="resources/css/main.min.css"/>
@@ -22,14 +22,11 @@
 		<h1 class="header-title">Title</h1>
 		<div class="user-session">
 			<ul>
-				<li><span>Rod Ahu</span></li>
-				<li>|</li>
+				<li><span>Lorem Ipsum</span></li>
 				<li><span>Administrador</span></li>
 				<li>|</li>
-				<li><a href="login.html">Salir</a></li>
-				<li>|</li>
+				<li><a href="login.html"><i class="fa fa-sign-out"></i></a></li>
 				<li><a href="javascript:;"><i class="fa fa-bell"></i></a></li>
-				<li>|</li>
 				<li><a href="javascript:;"><i class="fa fa-cog"></i></a></li>
 			</ul>
 		</div>
@@ -55,21 +52,21 @@
 				<li><a href="./" class="selected"><i class="fa fa-home fa-lg"></i></a></li>
 				<li><a href="javascript:;">UI Elements</a>
 					<ul class="submenu">
-						<li><a href="login.html">Login</a></li>
-						<li><a href="javascript:;">Step</a></li>
-						<li><a href="javascript:;">Modal</a>
-							<ul class="submenu">
-								<li><a href="javascript:;">Modal-Formulario</a></li>
-								<li><a href="javascript:;">Modal-Tabla</a></li>
-								<li><a href="javascript:;">Modal-Mensajes</a></li>
-							</ul>
-						</li>
+						<li><a href="javascript:;">Step Tracker</a></li>
 					</ul>
 				</li>
 				<li><a href="tablas.html"><i class="fa fa-table">&nbsp;</i>Tablas</a></li>
 				<li><a href="tabs.html"><i class="fa fa-bars">&nbsp;</i>Tabs</a></li>
 				<li><a href="bloques.html"><i class="fa fa-th-large">&nbsp;</i>Bloques</a></li>
 				<li><a href="formulario.html"><i class="fa fa-send">&nbsp;</i>Formularios</a></li>
+				<li disabled><a href="login.html">Login</a></li>
+				<li disabled><a href="javascript:;">Modal</a>
+					<ul class="submenu">
+						<li><a href="javascript:;">Modal-Formulario</a></li>
+						<li><a href="javascript:;">Modal-Tabla</a></li>
+						<li><a href="javascript:;">Modal-Mensajes</a></li>
+					</ul>
+				</li>
 			</ul>
 		</nav>
 	</header>
@@ -89,7 +86,7 @@
 			</header>
 			<div class="module">
 				<div class="module-header collapse">
-					<h3>Modulo Tabs Horizontal</h3>
+					<h3>Tabs Horizontal</h3>
 					<i class="fa  fa-compress fa-lg"></i>
 				</div>
 				<div class="module-content">
@@ -127,10 +124,50 @@
 					</div>
 				</div>
 			</div>
+			<div class="module">
+				<div class="module-header collapse">
+					<h3>Tabs Vertical</h3>
+					<i class="fa  fa-compress fa-lg"></i>
+				</div>
+				<div class="module-content">
+					<div module="tabs" tab="vertical">
+						<ul>
+							<li><a href="javascript:;" tab="tab-5" class="link-tab">Contenidos</a></li>
+							<li><a href="javascript:;" tab="tab-6">Grillas</a></li>
+							<li><a href="javascript:;" tab="tab-7">Collapsed info</a></li>
+							<li><a href="javascript:;" tab="tab-8"><i class="fa fa-check">&nbsp;</i>Mix</a></li>
+						</ul>
+						<div tabs-wrap>
+							<div id="tab-5" class="tab-selected" tab>
+								<h3>Contenidos</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+							<div id="tab-6" tab>
+								<h3>Grillas</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+							<div id="tab-7" tab>
+								<h3>Collapsed info</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+							<div id="tab-8" tab>
+								<h3><i class="fa fa-check"></i>&nbsp; Mix</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+					<div module="footer-buttons">
+						<ul>
+							<li><button ui="button" color="grey" ><i class="fa fa-chevron-left"></i>&nbsp; Volver</button></li>
+							<li><button ui="button" color="blue" ><i class="fa fa-chevron-right"></i>&nbsp; Siguiente</button></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</section>
     </main>
 	<footer>
-		<span>Dashboard | 2016</span>
+		<span>UI Elements | 2016</span>
 	</footer>
 </body>
 </html>

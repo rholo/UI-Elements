@@ -16,7 +16,8 @@
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: #333 url('http://files.mimoymima.com/images/loading.gif') no-repeat center center;
+  background: #fff url('../img/preloader.gif') no-repeat center center;
+  background-size: 16px;
 }
 body {
   background-color: $bodyBackground;
@@ -139,10 +140,6 @@ a {
   }
 }
 
-.module {
-  /*margin-top: 6px;*/
-}
-
 body > footer {
   text-align: center;
   > * {
@@ -152,10 +149,10 @@ body > footer {
 }
 
 .disabled{
-    cursor:not-allowed;
+    cursor:not-allowed!important;
 }
 a.disabled{
-    pointer-events: none;
+    pointer-events: none!important;
 }
 /**
  * @Description: Breadcrumb

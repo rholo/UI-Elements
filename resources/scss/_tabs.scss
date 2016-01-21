@@ -22,29 +22,25 @@
 [tab="vertical"] ul li {
   display: block;
 }
-
+[tab] ul li a {
+    display: block;
+    position: relative;
+    color: #444;
+    background-color: #f1f1f1;
+    text-decoration: none;
+    padding: 4px 10px;
+    &:hover {
+      background-color: #E8E8E8;
+    }
+}
 [tab="horizontal"] ul li a {
   float: left;
-  display: block;
-  position: relative;
-  color: #444;
-  background-color: #f1f1f1;
-  text-decoration: none;
-  padding: 4px 10px;
   border-bottom: 2px solid #ccc;
-  &:hover {
-    background-color: #E8E8E8;
-  }
 }
 
 [tab="vertical"] ul li a {
   float: none;
-  display: block;
-  position: relative;
-  color: #444;
-  background-color: #f1f1f1;
-  text-decoration: none;
-  padding: 4px 10px;
+  border-right: 2px solid #ccc;
 }
 
 .link-tab {
@@ -54,7 +50,7 @@
 }
 
 [tab="vertical"] ul li + li a {
-  border-left: 1px solid #dedede;
+  border-left: 2px solid #dedede;
 }
 
 [tabs-wrap] {
@@ -68,6 +64,7 @@
   position: relative;
   min-height: 200px;
   margin-left: 210px;
+  border:0!important;
 }
 
 [tabs-wrap] {
